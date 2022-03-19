@@ -1,0 +1,32 @@
+{
+  "name": "caps-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "csps.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --coverage --verbose",
+    "start": "node csps.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mhsalameh/CAPS-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mhsalameh/CAPS-system/issues"
+  },
+  "homepage": "https://github.com/Mhsalameh/CAPS-system#readme",
+  "dependencies": {
+    "chance": "^1.1.8",
+    "faker": "^6.6.6"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.0.0",
+    "jest": "^27.5.1"
+  }
+}
