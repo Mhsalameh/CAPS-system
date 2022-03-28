@@ -16,11 +16,12 @@ function vendorClient(storeName) {
     payLoad: orderInfo,
   });
 }
-
+eventEmitter.on("delivered", (payLoad)=>{
+  console.log(`VENDOR: Thank you for delivering ${payLoad.payLoad.orderID}`)
+});
 function deliveredHandler(payLoad) {
   console.log(payLoad);
   console.log(`DRIVER: delivered up ${payLoad.payLoad.orderID}`);
-  console.log(`VENDOR: Thank you for delivering ${payLoad.payLoad.orderID}`);
 }
 
 module.exports = {vendorClient:vendorClient, deliveredHandler:deliveredHandler};

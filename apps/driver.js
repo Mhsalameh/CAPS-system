@@ -1,11 +1,13 @@
 const eventEmitter = require("../lib/events"); // Events --> class (we use new Events())
 
+eventEmitter.on('pickup',(payLoad)=>{
+console.log(`DRIVER: picked up ${payLoad.payLoad.orderID}`);
+})
 let orderPayLoad;
 function pickUpHandler(payLoad) {
   orderPayLoad = payLoad.payLoad;
   console.log(payLoad);
   setTimeout(() => {
-    console.log(`DRIVER: picked up ${payLoad.payLoad.orderID}`);
     eventEmitter.emit("in-transit", {
       event: "in-transit",
       time: new Date(),
