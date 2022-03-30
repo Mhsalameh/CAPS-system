@@ -7,3 +7,7 @@
 ## [pull-request](./)
 
 ## [actions](./)
+
+## OUTPUT
+
+![console log looks like](./assets/class12-output.png)
