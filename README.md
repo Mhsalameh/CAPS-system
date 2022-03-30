@@ -4,9 +4,9 @@
 
 ![UML](./assets/class12.png)
 
-## [pull-request](./)
+## [pull-request](https://github.com/Mhsalameh/CAPS-system/pull/1)
 
-## [actions](./)
+## [actions](https://github.com/Mhsalameh/CAPS-system/actions)
 
 ## OUTPUT
 
